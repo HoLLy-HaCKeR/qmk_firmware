@@ -1,10 +1,10 @@
-# The default Preonic layout - largely based on the Planck's
-Changes from the default layout:
-- Moved bottom left CTRL, SUPER, ALT keys to follow standard ANSI layout
-- Changed right space key to be shift
-- Removed dvorak and colemak layers
+# HoLLy's Preonic layout
 
-Planned changes:
-- change RAISE or LOWER layer to contain standard symbols
-- add arrow keys to a layer
-- ensure all normal symbols are accessible (such as colon)
+Changes from the default Preonic layout:
+- **Changed right space key to be shift**
+- **Reorder bottom left CTRL, SUPER, ALT keys** to follow standard ANSI layout
+- **Move symbol keys from raise to lower layer** to make pressing them with shift easier
+- **Add arrow keys to raised layer** on `jkl;`
+- **Remove duplicated and strangely placed keys**, which originally came from the planck base
+- Removed dvorak and colemak layers
+- Add right control/alt/super/app keys on adjust layer

@@ -20,7 +20,8 @@
    - MIDI notes can be sent when in Music mode is on
 */
 
-#define MIDI_BASIC
+// #define MIDI_BASIC
+// #define AUDIO_CLICKY
 
 /* enable advanced MIDI features:
    - MIDI notes can be added to the keymap
