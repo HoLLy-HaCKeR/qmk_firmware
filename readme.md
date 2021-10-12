@@ -1,3 +1,11 @@
+# HoLLy's keymap
+
+This repository holds the firmware for my OLBK Preonic. You can find the code [here](https://github.com/HoLLy-HaCKeR/qmk_firmware/tree/holly-keymap/keyboards/preonic/keymaps/holly).
+
+Below follows the original README.
+
+---
+
 # Quantum Mechanical Keyboard Firmware
 
 [![Current Version](https://img.shields.io/github/tag/qmk/qmk_firmware.svg)](https://github.com/qmk/qmk_firmware/tags)
