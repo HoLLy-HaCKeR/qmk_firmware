@@ -8,3 +8,7 @@ Changes from the default Preonic layout:
 - **Remove duplicated and strangely placed keys**, which originally came from the planck base
 - Removed dvorak and colemak layers
 - Add right control/alt/super/app keys on adjust layer
+
+## Future
+
+- See https://dreymar.colemak.org/layers-extend.html
