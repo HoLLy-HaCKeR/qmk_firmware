@@ -6,7 +6,7 @@ Changes from the default Preonic layout:
 - **Move symbol keys from raise to lower layer** to make pressing them with shift easier
 - **Add navigation keys to layer on `jkl;`**. This includes arrow keys on raise layer and HOME/PgDn/PgUp/END on adjust layer.
 - **Remove duplicated and strangely placed keys**, which originally came from the planck base
-- Removed dvorak and colemak layers
+- Removed dvorak layer
 - Add right control/alt/super/app keys on adjust layer
 
 ## Future
