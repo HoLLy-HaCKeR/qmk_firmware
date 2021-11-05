@@ -1,14 +1,89 @@
 # HoLLy's Preonic layout
 
-Changes from the default Preonic layout:
-- **Changed right space key to be shift**
-- **Reorder bottom left CTRL, SUPER, ALT keys** to follow standard ANSI layout
-- **Move symbol keys from raise to lower layer** to make pressing them with shift easier
-- **Add navigation keys to layer on `jkl;`**. This includes arrow keys on raise layer and HOME/PgDn/PgUp/END on adjust layer.
-- **Remove duplicated and strangely placed keys**, which originally came from the planck base
-- Removed dvorak layer
-- Add right control/alt/super/app keys on adjust layer
+This layout is originally based on the default layout but with many changes, so by now it is mostly original.
 
-## Future
+Notable features:
+- Single-unit spacebar, with single-unit shift next to it so both can be hit with thumbs
+- `RAISE` + `JKL;` contains arrow keys. Add `LOWER` key for HOME/PgDn/PgUp/END.
+- Mouse movement, click and scrolling on `RAISE` layer
+- `ADJUST` + `I` prints build date and commit hash
+- Switch between QWERTY and COLEMAK-DHm through `ADJUST` layer
 
-- See https://dreymar.colemak.org/layers-extend.html
+Unlike the default layout, this one removes duplicated/redundant symbols, opting for simplicity and only having 1 way to enter a character.
+
+```c
+/* Qwerty
+ * ,-----------------------------------------------------------------------------------.
+ * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * | Tab  |   Q  |   W  |   E  |   R  |   T  |   Y  |   U  |   I  |   O  |   P  | Del  |
+ * |------+------+------+------+------+-------------+------+------+------+------+------|
+ * | Esc  |   A  |   S  |   D  |   F  |   G  |   H  |   J  |   K  |   L  |   ;  |  "   |
+ * |------+------+------+------+------+------|------+------+------+------+------+------|
+ * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Enter |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * | Ctrl | GUI  | App  | Alt  |Lower | Spce | Shft |Raise | Left | Down |  Up  |Right |
+ * `-----------------------------------------------------------------------------------'
+ */
+
+/* Colemak-DHm
+ * ,-----------------------------------------------------------------------------------.
+ * |   `  |   1  |   2  |   3  |   4  |   5  |   6  |   7  |   8  |   9  |   0  | Bksp |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * | Tab  |   Q  |   W  |   F  |   P  |   B  |   J  |   L  |   U  |   Y  |   ;  | Del  |
+ * |------+------+------+------+------+-------------+------+------+------+------+------|
+ * | Esc  |   A  |   R  |   S  |   T  |   G  |   M  |   N  |   E  |   I  |   O  |  "   |
+ * |------+------+------+------+------+------|------+------+------+------+------+------|
+ * | Shift|   Z  |   X  |   C  |   D  |   V  |   K  |   H  |   ,  |   .  |   /  |Enter |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * | Ctrl | GUI  | App  | Alt  |Lower | Spce | Shft |Raise | Left | Down |  Up  |Right |
+ * `-----------------------------------------------------------------------------------'
+ */
+
+/* Lower
+ * ,-----------------------------------------------------------------------------------.
+ * |      |      |      |      |      |      |      |      |      |      |      | PScr |
+ * |------+------+------+------+------+-------------+------+------+------+------+------|
+ * |      |      |      |      |      |      |      |      |      |      |      |      |
+ * |------+------+------+------+------+-------------+------+------+------+------+------|
+ * |      |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |   -  |   =  |   [  |   ]  |  \   |
+ * |------+------+------+------+------+------|------+------+------+------+------+------|
+ * |      |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |      |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |      |      |      |      |      |      |BrBack| Vol- | Vol+ |BrForw|
+ * `-----------------------------------------------------------------------------------'
+ */
+
+/* Raise
+ * ,-----------------------------------------------------------------------------------.
+ * |      |      |      |      |      |      |      |      |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |      |      |      |      | LMB  | Ms ◀ | Ms ▼ | Ms ▲ | Ms ▶ | RMB  |
+ * |------+------+------+------+------+-------------+------+------+------+------+------|
+ * |      |      |      |      |      |      |      | Left | Down | Up   |Right |      |
+ * |------+------+------+------+------+------|------+------+------+------+------+------|
+ * |      |      |      |      |      |      |      | MwL  | MwUp | MwDn | MwR  |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |      |      |      |      |      |      | Prev | Stop | Play | Next |
+ * `-----------------------------------------------------------------------------------'
+ */
+
+/* Adjust (Lower + Raise)
+ * ,-----------------------------------------------------------------------------------.
+ * |QWERTY|CLMKDH|      |      |      |      |      |      |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      | Reset| Debug|      |      |      |      |      | Info |      |      |      |
+ * |------+------+------+------+------+-------------+------+------+------+------+------|
+ * |      |      |      |      |      |      |      | Home | PgDn | PgUp | End  |      |
+ * |------+------+------+------+------+------|------+------+------+------+------+------|
+ * |      |      |      |      |      |      |      |      |      |      |      |      |
+ * |------+------+------+------+------+------+------+------+------+------+------+------|
+ * |      |      |      |      |      |      |      |      | RAlt | RGUI | App  |R.Ctrl|
+ * `-----------------------------------------------------------------------------------'
+ */
+```
+
+## Future plans
+
+- azerty-compat mode, allowing to use qwerty on a pc that is set to azerty
+- Add missing keys, such as insert
