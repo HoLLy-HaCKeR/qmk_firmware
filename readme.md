@@ -1,6 +1,6 @@
 # HoLLy's keymap
 
-This repository holds the firmware for my OLBK Preonic. You can find the code [here](https://github.com/HoLLy-HaCKeR/qmk_firmware/tree/holly-keymap/keyboards/preonic/keymaps/holly).
+This repository holds the firmware for my OLBK Preonic and keeb.io Iris. You can find the code [here](https://github.com/HoLLy-HaCKeR/qmk_firmware/tree/holly-keymap/keyboards/preonic/keymaps/holly) and [here](https://github.com/HoLLy-HaCKeR/qmk_firmware/tree/holly-keymap/keyboards/keebio/iris/keymaps/holly).
 
 Below follows the original README.
 
